@@ -12,6 +12,11 @@ export class CommitsService {
       const response = await firstValueFrom(
         this.http.get(
           'https://api.github.com/repos/Robertorc83/GithubCommits/commits',
+          {
+            headers: {
+              Authorization: `token  ${process.env.TOKEN_AUTH}`,
+            },
+          },
         ),
       );
       return response.data.map(
