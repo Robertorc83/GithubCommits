@@ -33,12 +33,12 @@ function App() {
   }
 
   return (
-    <div className="bg-clay h-screen overflow-y-hidden">
+    <div className="bg-clay lg:h-screen overflow-y-hidden">
       <Layout>
-        <div className="grid grid-cols-2">
+        <div className="grid lg:grid-cols-2 gap-10">
           <div className="grid items-center">
-            <div className="group pb-28">
-              <div className="bg-dark_blue py-36 text-center ml-10 rounded-xl transition duration-400 ease-in-out group-hover:bg-teal-200">
+            <div className="group px-10 lg:px-0 mt-10 lg:mt-0 pb-28">
+              <div className="bg-dark_blue py-36 text-center lg:ml-10 rounded-xl transition duration-400 ease-in-out group-hover:bg-teal-200 px-10">
                 <p className="font-main text-white group-hover:text-dark_blue">This is the commit history for the GithubCommits repository</p>
                 <p className="font-main text-white group-hover:text-dark_blue">If you want to check the complete repositoy go to the link</p>
                 <a href="https://github.com/Robertorc83/GithubCommits" className="block pt-5 text-teal-400 group-hover:font-bold group-hover:text-slate-800 transition duration-200 font-main font-medium" target="_blank">See Repository →</a>
